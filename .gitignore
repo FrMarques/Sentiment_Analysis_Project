@@ -1,0 +1,14 @@
+# Ignorar o ambiente virtual
+venv/
+
+# Ficheiros temporários
+*.pyc
+__pycache__/
+
+# Ficheiros de configuração locais
+*.log
+*.env
+
+# Outros ficheiros a excluir
+NLP fundamentals.ipynb
+Wiki Portugal.txt
