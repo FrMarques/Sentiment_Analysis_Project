@@ -4,7 +4,7 @@ import streamlit as st
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer   #
 
-st.write("# Analise de Satisfação do Cliente")     # Titulo do modelo de predição de satisfação;
+st.write("# Clients Reviews Analysis")     # Titulo do modelo de predição de satisfação;
 
 user_input = st.text_input("Please, write a review about our service: ")    # Comentario do utilizador;
 

@@ -4,7 +4,7 @@ import streamlit as st
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
 
-st.write("# Análise de Satisfação do Cliente")
+st.write("# Customer Satisfaction Analysis")
 
 user_input = st.text_input("Please, write a review about our service:")
 
