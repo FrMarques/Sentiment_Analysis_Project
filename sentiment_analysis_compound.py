@@ -3,25 +3,13 @@ import numpy as np
 import streamlit as st
 import nltk
 from nltk.sentiment import SentimentIntensityAnalyzer
+import matplotlib.pyplot as plt
 
 st.write("# Customer Satisfaction Analysis")
 
 user_input = st.text_input("Please, write a review about our service:")
 
-nltk.download("vader_lexicon")  # só é necessário na primeira vez
-
-#if user_input:  # garantir que o campo não está vazio
-#    s = SentimentIntensityAnalyzer()
-#    score = s.polarity_scores(user_input)
-
-#    if score["compound"] == 0:
-#        st.write("Not good nor bad")
-#    elif score["neg"] > score["pos"]:
-#        st.write("## Negative review")
-#    else:
-#        st.write("## Positive review")
-
-import matplotlib.pyplot as plt
+nltk.download("vader_lexicon")
        
 if user_input:
     s = SentimentIntensityAnalyzer()
